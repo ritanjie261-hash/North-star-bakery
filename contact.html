@@ -36,7 +36,9 @@
         <section>
             <h2>Inquiry and Pre-Order Form</h2>
 
-            <form action="#" method="get">
+                 
+             <form id="contact-form" action="#" method="get" novalidate>
+
                 <fieldset>
                     <legend>Customer Information</legend>
 
@@ -44,11 +46,18 @@
                         <label for="customer-name">
                             Full Name:
                         </label>
-                        <input
+                        
+                         <input
                             type="text"
                             id="customer-name"
                             name="customer-name"
                             required>
+                         <span id="name-error" class="error-message"></span>
+
+                    
+                            
+                            
+                        
                     </p>
 
                     <p>
@@ -60,6 +69,7 @@
                             id="email"
                             name="email"
                             required>
+                        <span id="email-error" class="error-message"></span>
                     </p>
                 </fieldset>
 
@@ -151,5 +161,7 @@
     <footer>
         <p>&copy; 2026 North Star Bakery.</p>
     </footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
