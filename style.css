@@ -239,3 +239,12 @@ button:focus-visible {
     padding: 30px;
   }
 }
+
+
+/* Contact form validation messages */
+.error-message {
+    color: #B22222;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
